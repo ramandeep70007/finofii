@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Finofii Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,
+GRAD@20..48,100..700,0..1,-50..200"/>
+  
+  <link rel="stylesheet" href="style.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js"></script>
+  <script src="script.js"></script>
+  
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top finofiibg" id="mainNav">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logoimg"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="image">
+                <img src="images/img.png" class="admin-img">
+               </li>
+              <li class="nav-item" data-toggle="tooltip" data-placement="right" title="text">
+               <span class="nav-link-text">Minting Solutions<br>Private Limited</span>
+              </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Invest Now">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa fa-credit-card"></i>
+              <span class="nav-link-text">Invest Now</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Help and Support">
+            <a class="nav-link" href="#">
+              <!-- <i class="fa fa-fw fa-table"></i> -->
+              <span class="material-symbols-outlined" style="font-variation-settings:'FILL'1";>conversion_path</span>
+              <span class="nav-link-text">Help and Support</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sign Out">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa fa-sign-out"></i>
+              <span class="nav-link-text">Sign out</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Wallet">
+            <img src="images/wallet.png" class="wallet_image">
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="text">
+            <span class="nav-link-text">A digital platform that handles all<br> your business financial needs</span>
+           </li>
+           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="toggle">
+            <div class="toogle">
+            <input class='input-switch' type="checkbox" id="demo"/>
+            <label class="label-switch" for="demo"></label>
+            <span class="info-text"></span>
+            </div>
+           </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+           
+            <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+              <h6 class="dropdown-header">New Messages:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>David Miller</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Jane Smith</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>John Doe</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">View all messages</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-bell"></i>
+              <span class="d-lg-none">Alerts
+                <span class="badge badge-pill badge-warning">6 New</span>
+              </span>
+              <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">New Alerts:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-danger">
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">View all alerts</a>
+            </div>
+          </li>
+         
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#" class="li_item">Dashboard</a>
+          </li>
+          <!-- <li class="breadcrumb-item active">My Dashboard</li> -->
+        </ol>
+        <!-- Icon Cards-->
+        <div class="row">
+          <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
+              
+              <div class="card-body">
+                <div class="card_border">
+                <div class="mr-5">Current Account Balance</div>
+                <div class="cardimg"><img src="images/g1.png" class="cab"><span class="cabtext">&#8377;</span><span class="cabtext">1,20,00,000/-</span></div>
+                
+              </div>
+            </div>
+             
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                    <div class="card_border">
+                    <div class="mr-5">Receivables</div>
+                    <div class="cardimg"><img src="images/g2.png" class="cab1"><span class="cabtext1">&#8377;</span><span class="cabtext1">75,00,000/-</span></div>
+                    <div class="carddata"><span>Including vendor payments, refunds etc.</span></div>
+                    
+                  </div>
+                </div>
+             
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                    <div class="card_border">
+                    <div class="mr-5">Payables</div>
+                    <div class="cardimg"><img src="images/g3.png" class="cab1"><span style='font-size:25px;' class="cabtext1">&#8377;</span><span class="cabtext1">24,00,000/-</span></div>
+                    <div class="carddata"><span>Including vendor payments, refunds etc.</span></div>
+                    
+                  </div>
+                </div>
+             
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 ">
+              <div class="card text-white ">
+                
+                <div class="card-body">
+                    <ol>
+                        <li>
+                          <a href="#" class="li_item">Accounts</a>
+                        </li>
+                      
+                      </ol>
+                     
+                       
+                        <div class="cardimg"><img src="images/hdfc.png" class="cab11"><div class="setdata"><span class="cabtext11">&#8377;</span><span class="cabtext111">75,00,000/-</span></div></div>
+                        <div class="cardimg"><img src="images/axis.png" class="cab11"><div class="setdata"><span class="cabtext11">&#8377;</span><span class="cabtext111">75,00,000/-</span></div></div>
+                        <div class="carddata1"><span>All accounts added by you, will appear here</span></div>
+                        <hr class="hr_color"/>
+                        <div class="cardbutton"><button type="button" name="addaccount" class="btn btn-success">+ Add New Account</button> <button type="button" name="addcash" class="btn btn-success">+ Add Cash</button></div>
+
+                        
+                      
+              </div>
+               
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="card text-white  h-100">
+                  <div class="card-body">
+                    <ol>
+                        <li>
+                          <a href="#" class="li_item">Investment Statistics</a>
+                        </li>
+                      </ol>
+                      <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+
+                  </div>
+               
+              </div>
+            </div>
+           
+            
+          </div>
+          <BR>
+          <div class="row">
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="card text-white bg-primary o-hidden h-100">
+                
+                <div class="card-body">
+                  <div class="card_border">
+                  
+                  <div class="cardimg"><img src="images/s1.png" class="cab"><span class="cardtxt">Investible Surplus</span><span class="btnarea"><button type="button" class="btn btn-light">Invest</button></span><br><span class="cabtext2">Know Your Surplus Value</span></div>
+                 
+                  
+                </div>
+              </div>
+               
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="card text-white bg-warning o-hidden h-100">
+                  <div class="card-body">
+                      <div class="card_border">
+                      
+                      <div class="cardimg"><img src="images/l1.png" class="cab"><span class="cardtxt">Invest Now</span><span class="btnarea"><button type="button" class="btn btn-light">Start Investing</button></span><br><span class="cabtext2">Invest In Schemes & grow your  A/c</span></div>
+                      
+                      
+                    </div>
+                  </div>
+               
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="card text-white bg-success o-hidden h-100">
+                  <div class="card-body">
+                      <div class="card_border">
+                     
+                      <div class="cardimg"><img src="images/b1.png" class="cab"><span class="cardtxt">Statement Analyzer</span><span class="btnarea"><button type="button" class="btn btn-light">+ Upload</button></span><br><span class="cabtext2">Please Upload Your Bank Statements </span></div>
+                      
+                      
+                    </div>
+                  </div>
+               
+              </div>
+            </div>
+            
+          </div>
+       
+          
+         
+       
+      </div>
+      
+     
+      <footer class="sticky-footer">
+        <div class="container">
+          <div class="text-center">
+            <small>© 2022 Finofii</small>
+          </div>
+        </div>
+      </footer>
+      <!-- Scroll to Top Button-->
+    
+      <!-- Logout Modal-->
+     
+    </div>
+  </body>
+  <script>
+
+    
+    (function($) {
+      "use strict"; // Start of use strict
+      // Configure tooltips for collapsed side navigation
+      $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
+        template: '<div class="tooltip navbar-sidenav-tooltip" role="tooltip" style="pointer-events: none;"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+      })
+      // Toggle the side navigation
+      $("#sidenavToggler").click(function(e) {
+        e.preventDefault();
+        $("body").toggleClass("sidenav-toggled");
+        $(".navbar-sidenav .nav-link-collapse").addClass("collapsed");
+        $(".navbar-sidenav .sidenav-second-level, .navbar-sidenav .sidenav-third-level").removeClass("show");
+      });
+      // Force the toggled class to be removed when a collapsible nav link is clicked
+      $(".navbar-sidenav .nav-link-collapse").click(function(e) {
+        e.preventDefault();
+        $("body").removeClass("sidenav-toggled");
+      });
+      // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
+      $('body.fixed-nav .navbar-sidenav, body.fixed-nav .sidenav-toggler, body.fixed-nav .navbar-collapse').on('mousewheel DOMMouseScroll', function(e) {
+        var e0 = e.originalEvent,
+          delta = e0.wheelDelta || -e0.detail;
+        this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+        e.preventDefault();
+      });
+      // Scroll to top button appear
+      $(document).scroll(function() {
+        var scrollDistance = $(this).scrollTop();
+        if (scrollDistance > 100) {
+          $('.scroll-to-top').fadeIn();
+        } else {
+          $('.scroll-to-top').fadeOut();
+        }
+      });
+      // Configure tooltips globally
+      $('[data-toggle="tooltip"]').tooltip()
+      // Smooth scrolling using jQuery easing
+      $(document).on('click', 'a.scroll-to-top', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: ($($anchor.attr('href')).offset().top)
+        }, 1000, 'easeInOutExpo');
+        event.preventDefault();
+      });
+    })(jQuery); // End of use strict
+    </script>
+    <script>
+        $(document).ready(function () {
+
+var ctx = $("#myChart");
+
+var data = {
+  labels : ["", "", "", "", "","","","","","","",""],
+  datasets : [
+    {
+      label : "INFLOWS",
+      data : [35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35],
+      backgroundColor : [
+        "blue"
+      ],
+      borderColor : [
+        "#111",
+        "#111",
+        "#111",
+        "#111",
+        "#111"
+      ],
+      borderWidth : 1
+    },
+    {
+      label : "OUTFLOWS",
+      data : [25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
+      backgroundColor : [
+        "green"
+      ],
+      borderColor : [
+        "#111",
+        "#111",
+        "#111",
+        "#111",
+        "#111"
+      ],
+      borderWidth : 1
+    }
+  ]
+};
+
+var options = {
+  title : {
+    display : true,
+    position : "top",
+    text : "Random Multicolor Bar Graph",
+    fontSize : 15,
+    fontColor : "#111"
+  },
+  legend : {
+    display : false
+  },
+  scales : {
+    yAxes : [{
+      ticks : {
+        min : 0
+      }
+    }]
+  }
+};
+
+var chart = new Chart( ctx, {
+  type : "bar",
+  data : data,
+  options : options
+});
+
+/**
+ * function to generate random color in hex form
+ */
+function getRandomColorHex() {
+  var hex = "0123456789ABCDEF",
+      color = "#";
+  for (var i = 1; i <= 12; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+});
+    </script>
+</html>
