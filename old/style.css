@@ -1,255 +1,13 @@
-/* responsive css */
-@media screen and (min-device-width: 250px) and (max-device-width: 767px) { 
-  span.cabtext {
-    font-size: 24px !important;
-    
-}
-span.cabtext1 {
-  font-size: 20px !important;
-  
-}
-
-img.cabimg {
-  width: 41px !important;
-}
-button.fc-today-button.fc-button.fc-button-primary {
-  font-size: 11px !important;
-}
-.fc-toolbar h2 {
-  font-size: 20px !important;
- 
-}
-button.fc-dayGridMonth-button.fc-button.fc-button-primary {
-  font-size: 13px !important;
-}
-span.navbar-toggler-icon {
-  background: #11c4ff;
-}
-a.li_item {
- 
-  font-size: 16px !important;
-}
-.carddata {
-  font-size: 12px;
-}
-.display_content_bottom {
- 
-  bottom: 0px !important;
-}
-span.add_new_account {
-  display: grid;
-  padding: 10px 0 10px 0;
-}
-span.add_cassh {
-  display: flex;
-  padding: 10px 0 10px 0;
-}
-.col-xl-4.equlheight {
-  padding: 0px 0 10px 0;
-}
-.col-xl-8.equlheight {
-  padding: 0 0 10px 0;
-}
-.col-xl-6.equlheight {
-  padding: 0 0 10px 0;
-}
-span.cardtxt {
-  font-size: 18px !important;
-  
-}
-span.cabtext2 {
-  font-size: 15px !important;
- 
-}
-}
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
-  .carddata {
-    font-size: 13px !important;
-}
-span.cabtext {
-  font-size: 31px !important;
- 
-}
-span.cabtext1 {
-  font-size: 19px !important;
- 
-}
-.display_content_bottom {
-  
-  bottom: 0px !important;
-}
-.equlheight {
-  padding: 0 0 10px 0;
-}
-span.cardtxt {
-  font-size: 14px !important;
- 
-}
-img.cabimg {
-  width: 40px !important;
-}
-}
-
-
-
-
-
-/* end responsive css */
-
-
-
-
-
-
-
-
-
 /*my css start */
-.dataTables_info {
-  color: black !important;
-}
- .paginate_button.current {
-  
 
-  background: #170101 !important;
-}
-.display_content_bottom {
-  position: relative;
-  bottom: -162px;
-}
+
 #calendar {
   max-width: 900px;
   margin: 40px auto;
 }
-.sortingdata {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-}
-.card.text-white.equlheight1 {
-  height: 100%;
-}
-button.dt-button.buttons-csv.buttons-html5 {
-  margin-top: -50px;
-}
-span.rdmdata {
-  color: #D84E4E;
-}
-span.chasedata {
-  color: #34D39D;
-}
-span.irvalue1 {
-  color: #34D39D;
-}
-span.irvalue2 {
-  color: #34D39D;
-}
-span.irvalue3 {
-  color: #C6D334;
-}
-span.irvalue4 {
-  color: #D33434;
-}
-span.crvalue1 {
-  border: 2px solid #34D39D;
-  background: #b7e3d4;
-  border-radius: 5px;
-  color: #34D39D;
-  padding: 5px;
-}
-span.crvalue3 {
-  color: #C6D334;
-  border: 2px solid #C6D334;
-  padding: 5px;
-  border-radius: 5px;
-  background: #f5f9c7;
-}
-span.crvalue4 {
-  color: #D33434;
-  border: 2px solid #D33434;
-  padding: 5px;
-  border-radius: 5px;
-  background: #f4a8a8;
-}
-span.crvalue2 {
-  border: 2px solid #34D39D;
-  background: #b7e3d4;
-  border-radius: 5px;
-  color: #34D39D;
-  padding: 5px;
-}
-.card.text-white.bg-primary.o-hidden.h-100 {
-    background-image: linear-gradient(#F75672, #F2C0C2);
-}
-.card.text-white.bg-warning.o-hidden.h-100 {
-    background-image: linear-gradient(#A9DBFF, #D4A8FF);
-}
-.card.text-white.bg-success.o-hidden.h-100 {
-    background-image: linear-gradient(#FFB0E6, #BCB3FF);
-}
 
-.container-fluid {
-    background-image: linear-gradient(white, #f1fcff);
-}
-ol.breadcrumb {
-  background-image: linear-gradient(white, #f1fcff);
-}
-.card.text-white {
-    box-shadow: 0px 5px 10px 1px lightblue;
-}
-/* .card.text-white.bg-primary.o-hidden.h-100.a1 {
-  background-image: linear-gradient(#B78BFF, #FFBE9C) !important;
-}
-.card.text-white.bg-primary.o-hidden.h-100.a2 {
-  background-image: linear-gradient(#FF9292, #FFAAE2) !important;
-}
-.card.text-white.bg-primary.o-hidden.h-100.a3 {
-  background-image: linear-gradient(#69EDFF, #BFBBE0) !important;
-} */
-.a33 {
-  background-image: linear-gradient(#69EDFF, #BFBBE0) !important;
-}
-.a32 {
-  background-image: linear-gradient(#FF9292, #FFAAE2) !important;
-}
-.a31 {
-  background-image: linear-gradient(#B78BFF, #FFBE9C) !important;
-}
-/* thead.tableheader {
-  background: #a3a399;
-} */
-tr.tableheadbg {
-  background: #a3a399;
-}
-button.dt-button.buttons-csv.buttons-html5 {
-  float: right;
-}
-th.sorting {
-  font-size: 11px;
-}
-div#example_filter {
-  display: none;
-}
-div#example1_filter {
-  display: none;
-}
-div#example4_filter {
-  display: none;
-}
-button.btn.btn-light.a1 {
-  background: #FFBE9C;
-  color: white;
-  border: 3px solid;
-}
-button.btn.btn-light.a2 {
-  background: #FFAAE2;
-  color: white;
-  border: 3px solid;
-}
-button.btn.btn-light.a3 {
-  background: #BFBBE0;
-  color: white;
-  border: 3px solid;
-}
+
+
 
 img.logoimg {
     width: 100px;
@@ -274,7 +32,7 @@ table#example4 {
   color: black;
 }
 td.sortingdata {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
 }
 button.btn.btn-light {
@@ -286,17 +44,16 @@ body#page-top {
 }
 .card_border {
     border: dashed;
-    padding: 10px;
+    padding: 5px;
 }
 img.cab {
     width: 25px;
 }
 img.cab1 {
     width: 25px;
-    padding: 0 0 13px 0;
 }
 span.cabtext {
-    font-size: 39px;
+    font-size: 40px;
     padding: 0 0 0 15px;
 }
 span.cabtext2 {
@@ -314,7 +71,7 @@ span.cabtext2 {
     padding: 0 0 0 60px;
 }
 span.cardtxt {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 0 0 10px;
 }
 span.btnarea {
@@ -328,7 +85,7 @@ span.cabtext1 {
     border-radius: 20px;
 }
 img.cab11 {
-    width: 34.29px;
+    width: 40px;
     padding: 25px 0 0 0;
 }
 span.cabtext11 {
@@ -344,14 +101,13 @@ span.cabtext11 {
 }
 span.cabtext111 {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     padding: 0 0 0 5px;
 }
 a.li_item {
     color: black;
     font-weight: 700;
-    font-size:24px;
 }
 .toogle {
     padding: 30px;
@@ -360,7 +116,7 @@ a.li_item {
     background: white !important;
 }
 a#alertsDropdown {
-  background-image: linear-gradient(white, #f1fcff);
+    background: #e9ecef;
 }
 img.admin-img {
     width: 50px;
@@ -370,7 +126,7 @@ li.nav-item {
     text-align: center;
 }
 img.wallet_image {
-  width: 150px;
+    width: 58px;
 }
 
 html {
@@ -666,11 +422,11 @@ html {
   }
   
   #mainNav.fixed-top.navbar-dark .sidenav-toggler {
-    background-color: white;
+    background-color: #212529;
   }
   
   #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
-    color: #000102;
+    color: #adb5bd;
   }
   
   #mainNav.fixed-top.navbar-light .sidenav-toggler {

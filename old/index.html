@@ -18,7 +18,6 @@ GRAD@20..48,100..700,0..1,-50..200"/>
   <link rel="stylesheet" href="https://fullcalendar.io/releases/core/4.1.0/main.min.css">
   <link rel="stylesheet" href="https://fullcalendar.io/releases/daygrid/4.1.0/main.min.css">
   <link rel="stylesheet" href="https://fullcalendar.io/releases/timegrid/4.1.0/main.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
@@ -38,11 +37,6 @@ GRAD@20..48,100..700,0..1,-50..200"/>
   <script src="https://fullcalendar.io/releases/interaction/4.1.0/main.min.js"></script>
   <script src="https://fullcalendar.io/releases/daygrid/4.1.0/main.min.js"></script>
   <script src="https://fullcalendar.io/releases/timegrid/4.1.0/main.min.js"></script>
-  <style>
-    .itemsicons {
-  padding: 0 0 0 45px !important;
-}
-  </style>
   
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -55,43 +49,38 @@ GRAD@20..48,100..700,0..1,-50..200"/>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="image">
-                <img src="images/img.png" id="center_icon" class="admin-img">
+                <img src="images/img.png" class="admin-img">
                </li>
               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="text">
                <span class="nav-link-text">Minting Solutions<br>Private Limited</span>
               </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
             <a class="nav-link" href="index.html">
-              <i class="fa fa-fw fa-dashboard imageleft" id="center_icon"></i>
+              <i class="fa fa-fw fa-dashboard"></i>
               <span class="nav-link-text">Dashboard</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Invest Now">
-            <a class="nav-link" href="zohointegration.html">
-              <i class="fa fa-fw fa fa-credit-card imageleft" id="center_icon"></i>
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa fa-credit-card"></i>
               <span class="nav-link-text">Invest Now</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Help and Support">
-           
             <a class="nav-link" href="#">
-              <!-- <i class="fa fa-exchange imageleft" aria-hidden="true"></i> -->
               <!-- <i class="fa fa-fw fa-table"></i> -->
-              <div class="itemsicons">
-              <span class="material-symbols-outlined imageleft" style="font-variation-settings:'FILL'1"; id="center_icon">conversion_path</span>
-              <span class="nav-link-text testleft">Help and Support</span>
-            </div>
+              <span class="material-symbols-outlined" style="font-variation-settings:'FILL'1";>conversion_path</span>
+              <span class="nav-link-text">Help and Support</span>
             </a>
-         
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sign Out">
             <a class="nav-link" href="#">
-              <i class="fa fa-fw fa fa-sign-out imageleft" id="center_icon"></i>
+              <i class="fa fa-fw fa fa-sign-out"></i>
               <span class="nav-link-text">Sign out</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Wallet">
-            <img src="images/wallet.png" class="wallet_image" id="center_icon">
+            <img src="images/wallet.png" class="wallet_image">
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="text">
             <span class="nav-link-text">A digital platform that handles all<br> your business financial needs</span>
@@ -107,7 +96,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
         <ul class="navbar-nav sidenav-toggler">
           <li class="nav-item">
             <a class="nav-link text-center" id="sidenavToggler">
-              <i class="fa fa-fw fa-angle-left" id="center_icon"></i>
+              <i class="fa fa-fw fa-angle-left"></i>
             </a>
           </li>
         </ul>
@@ -243,10 +232,10 @@ GRAD@20..48,100..700,0..1,-50..200"/>
         </div>
 
         <div class="row">
-            <div class="col-xl-4 equlheight">
-              <div class="card text-white equlheight1">
+            <div class="col-xl-4 ">
+              <div class="card text-white ">
                 
-                <div class="card-body equlheight2">
+                <div class="card-body">
                     <ol>
                         <li>
                           <a href="#" class="li_item">Accounts</a>
@@ -257,19 +246,17 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                        
                         <div class="cardimg"><img src="images/hdfc.png" class="cab11"><div class="setdata"><span class="cabtext11">&#8377;</span><span class="cabtext111">75,00,000/-</span></div></div>
                         <div class="cardimg"><img src="images/axis.png" class="cab11"><div class="setdata"><span class="cabtext11">&#8377;</span><span class="cabtext111">75,00,000/-</span></div></div>
-                        <div class="display_content_bottom">
                         <div class="carddata1"><span>All accounts added by you, will appear here</span></div>
-                       
                         <hr class="hr_color"/>
-                        <div class="cardbutton"><span class="add_new_account"><button type="button" name="addaccount" class="btn btn-success">+ Add New Account</button></span> <span class="add_cassh"><button type="button" name="addcash" class="btn btn-success">+ Add Cash</button></span></div>
-                      </div>
+                        <div class="cardbutton"><button type="button" name="addaccount" class="btn btn-success">+ Add New Account</button> <button type="button" name="addcash" class="btn btn-success">+ Add Cash</button></div>
+
                         
                       
               </div>
                
               </div>
             </div>
-            <div class="col-xl-8 equlheight">
+            <div class="col-xl-8">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -292,12 +279,12 @@ GRAD@20..48,100..700,0..1,-50..200"/>
           <BR>
           <div class="row">
             <div class="col-xl-4 col-sm-6 mb-3">
-              <div class="card text-white bg-primary o-hidden h-100 a31">
+              <div class="card text-white bg-primary o-hidden h-100">
                 
                 <div class="card-body">
                   <div class="card_border">
                   
-                  <div class="cardimg"><img src="images/s1.png" class="cabimg"><span class="cardtxt">Investible Surplus</span><span class="btnarea"><button type="button" class="btn btn-light a1">Invest</button></span><br><span class="cabtext2">Know Your Surplus Value</span></div>
+                  <div class="cardimg"><img src="images/s1.png" class="cabimg"><span class="cardtxt">Investible Surplus</span><span class="btnarea"><button type="button" class="btn btn-light">Invest</button></span><br><span class="cabtext2">Know Your Surplus Value</span></div>
                  
                   
                 </div>
@@ -306,11 +293,11 @@ GRAD@20..48,100..700,0..1,-50..200"/>
               </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-3">
-              <div class="card text-white bg-warning o-hidden h-100 a32">
+              <div class="card text-white bg-warning o-hidden h-100">
                   <div class="card-body">
                       <div class="card_border">
                       
-                      <div class="cardimg"><img src="images/l1.png" class="cabimg"><span class="cardtxt">Invest Now</span><span class="btnarea"><button type="button" class="btn btn-light a2">Start Investing</button></span><br><span class="cabtext2">Invest In Schemes & grow your  A/c</span></div>
+                      <div class="cardimg"><img src="images/l1.png" class="cabimg"><span class="cardtxt">Invest Now</span><span class="btnarea"><button type="button" class="btn btn-light">Start Investing</button></span><br><span class="cabtext2">Invest In Schemes & grow your  A/c</span></div>
                       
                       
                     </div>
@@ -319,11 +306,11 @@ GRAD@20..48,100..700,0..1,-50..200"/>
               </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-3">
-              <div class="card text-white bg-success o-hidden h-100 a33">
+              <div class="card text-white bg-success o-hidden h-100">
                   <div class="card-body">
                       <div class="card_border">
                      
-                      <div class="cardimg"><img src="images/b1.png" class="cabimg"><span class="cardtxt">Statement Analyzer</span><span class="btnarea"><button type="button" class="btn btn-light a3">+ Upload</button></span><br><span class="cabtext2">Please Upload Your Bank Statements </span></div>
+                      <div class="cardimg"><img src="images/b1.png" class="cabimg"><span class="cardtxt">Statement Analyzer</span><span class="btnarea"><button type="button" class="btn btn-light">+ Upload</button></span><br><span class="cabtext2">Please Upload Your Bank Statements </span></div>
                       
                       
                     </div>
@@ -337,7 +324,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
 <br>
           <div class="row">
             
-            <div class="col-xl-8 equlheight">
+            <div class="col-xl-8">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -355,7 +342,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
               </div>
             </div>
 
-            <div class="col-xl-4 equlheight">
+            <div class="col-xl-4 ">
               <div class="card text-white ">
                 <canvas id="myChart3">  </canvas>
                 <hr/>
@@ -371,7 +358,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
           <br>
           <div class="row">
             
-            <div class="col-xl-6 equlheight">
+            <div class="col-xl-6">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -382,8 +369,8 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                       <hr/>
                       <div>
                         <table id="example" class="display nowrap" style="width:100%">
-                          <thead class="tableheader">
-                              <tr class="tableheadbg">
+                          <thead>
+                              <tr>
                                   <th>#</th>
                                   <th>Fund Name</th>
                                   <th>Purchase Value</th>
@@ -397,32 +384,32 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                                   <td class="sortingdata">1</td>
                                   <td class="sortingdata">Aditya Birla SL Low Duration Fund</td>
                                   <td class="sortingdata">1,45,235.8360</td>
-                                  <td class="sortingdata"><span class="crvalue1">8,03,77,941.34</span></td>
-                                  <td class="sortingdata"><span class="irvalue1">6.39</span></td>
+                                  <td class="sortingdata">8,03,77,941.34</td>
+                                  <td class="sortingdata">6.39</td>
                                  
                               </tr>
                               <tr>
                                   <td class="sortingdata">2</td>
                                   <td class="sortingdata">Axis Ultra Short Term Fund Reg</td>
                                   <td class="sortingdata">64,42,146.6470</td>
-                                  <td class="sortingdata"><span class="crvalue2">8,03,85,750.08</span></td>
-                                  <td class="sortingdata"><span class="irvalue2">6.52</span></td>
+                                  <td class="sortingdata">8,03,85,750.08</td>
+                                  <td class="sortingdata">6.52</td>
                                  
                               </tr>
                               <tr>
                                   <td class="sortingdata">3</td>
                                   <td class="sortingdata">Nippon India Ultra Short Duration Fund</td>
                                   <td class="sortingdata">21,182.6020</td>
-                                  <td class="sortingdata"><span class="crvalue3">7,19,95,372.60</span></td>
-                                  <td class="sortingdata"><span class="irvalue3">6.71</span></td>
+                                  <td class="sortingdata">7,19,95,372.60</td>
+                                  <td class="sortingdata">6.71</td>
                                  
                               </tr>
                               <tr>
                                   <td class="sortingdata">4</td>
                                   <td class="sortingdata">Sundaram Ultra Short Duration Fund</td>
                                   <td class="sortingdata">34,879.4020</td>
-                                  <td class="sortingdata"><span class="crvalue4">8,03,51,259.83</span></td>
-                                  <td class="sortingdata"><span class="irvalue4">5.94</span></td>
+                                  <td class="sortingdata">8,03,51,259.83</td>
+                                  <td class="sortingdata">5.94</td>
                                  
                               </tr>
                           </tbody>
@@ -435,7 +422,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
               </div>
             </div>
 
-            <div class="col-xl-6 equlheight">
+            <div class="col-xl-6">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -446,8 +433,8 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                       <hr/>
                       <div>
                         <table id="example1" class="display nowrap" style="width:100%">
-                          <thead class="tableheader">
-                              <tr class="tableheadbg">
+                          <thead>
+                              <tr>
                                   <th>#</th>
                                   <th>Mutual Funds</th>
                                   <th>Purchase Value</th>
@@ -461,7 +448,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                                   <td class="sortingdata">1</td>
                                   <td class="sortingdata">Aditya Birla SL Low Duration Fund</td>
                                   <td class="sortingdata">23,00,000</td>
-                                  <td class="sortingdata"><span class="rdmdata">Redeemed</span></td>
+                                  <td class="sortingdata">Redeemed</td>
                                   
                                  
                               </tr>
@@ -469,7 +456,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                                   <td class="sortingdata">2</td>
                                   <td class="sortingdata">Axis Ultra Short Term Fund Reg</td>
                                   <td class="sortingdata">10,00,000</td>
-                                  <td class="sortingdata"><span class="chasedata">Purchased</span></td>
+                                  <td class="sortingdata">Purchased</td>
                                 
                                  
                               </tr>
@@ -477,7 +464,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                                   <td class="sortingdata">3</td>
                                   <td class="sortingdata">Aditya Birla SL Low Duration Fund</td>
                                   <td class="sortingdata">50,00,000</td>
-                                  <td class="sortingdata"><span class="chasedata">Purchased</span></td>
+                                  <td class="sortingdata">Purchased</td>
                                 
                                  
                               </tr>
@@ -485,7 +472,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                                   <td class="sortingdata">4</td>
                                   <td class="sortingdata">Axis Ultra Short Term Fund Reg</td>
                                   <td class="sortingdata">13,00,000</td>
-                                  <td class="sortingdata"><span class="chasedata">Purchased</span></td>
+                                  <td class="sortingdata">Purchased</td>
                                   
                                  
                               </tr>
@@ -505,7 +492,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
           <br>
           <div class="row">
             
-            <div class="col-xl-8 equlheight">
+            <div class="col-xl-8">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -516,8 +503,8 @@ GRAD@20..48,100..700,0..1,-50..200"/>
                       <hr/>
                       <div>
                         <table id="example4" class="display nowrap" style="width:100%">
-                          <thead class="tableheader">
-                              <tr class="tableheadbg">
+                          <thead>
+                              <tr>
                                   <th>#</th>
                                   <th>Purpose</th>
                                   <th>Purchase Value</th>
@@ -577,7 +564,7 @@ GRAD@20..48,100..700,0..1,-50..200"/>
               </div>
             </div>
 
-            <div class="col-xl-4 equlheight">
+            <div class="col-xl-4">
               <div class="card text-white  h-100">
                   <div class="card-body">
                     <ol>
@@ -683,21 +670,14 @@ var data = {
       label : "INFLOWS",
       data : [35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35],
       backgroundColor : [
-        "#298BFF"
+        "blue"
       ],
       borderColor : [
-        "#298BFF",
-        "#298BFF",
-        "#298BFF",
-        "#298BFF",
-        "#298BFF"
-      ],
-      borderRadius : [
-        "4",
-        "4",
-        "4",
-        "4",
-        "4"
+        "#111",
+        "#111",
+        "#111",
+        "#111",
+        "#111"
       ],
       borderWidth : 1
     },
@@ -705,21 +685,14 @@ var data = {
       label : "OUTFLOWS",
       data : [25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
       backgroundColor : [
-        "#08D5A2"
+        "green"
       ],
       borderColor : [
-        "#08D5A2",
-        "#08D5A2",
-        "#08D5A2",
-        "#08D5A2",
-        "#08D5A2"
-      ],
-      borderRadius : [
-        "4",
-        "4",
-        "4",
-        "4",
-        "4"
+        "#111",
+        "#111",
+        "#111",
+        "#111",
+        "#111"
       ],
       borderWidth : 1
     }
@@ -738,16 +711,6 @@ var options = {
     display : false
   },
   scales : {
-    x: {
-          grid: {
-            display: false
-          }
-        },
-        y: {
-          grid: {
-            display: false
-          }
-        },
     yAxes : [{
       ticks : {
         min : 0
@@ -787,32 +750,23 @@ function getRandomColorHex() {
       datasets: [{ 
         label : "FD",
         data: [5,30,40,60,80,90,100,105,110,130],
-        borderColor: "#278FFB",
-        fill: false,
-        borderDash: [10,10]
+        borderColor: "red",
+        fill: false
       }, { 
         label : "Current Account",
         data: [8,35,45,70,75,95,130,180,210],
-        borderColor: "#AC08D5",
-        fill: false,
-        borderDash: [10,10]
+        borderColor: "green",
+        fill: false
       }, { 
         label : "Finofii Treasury",
         data: [15,70,95,110,140,170,200,230,250,280],
-        borderColor: "#08D5A2",
-        fill: false,
-        borderDash: [10,10]
+        borderColor: "blue",
+        fill: false
       }]
     },
     options: {
-      legend: {display: false},
-      scales : {x: {
-          grid: {
-            display: false
-          }
-        },} 
+      legend: {display: false}
     }
-  
   });
   </script>
 
@@ -826,16 +780,16 @@ var myChart3 = new Chart(ctx, {
       label: '',
       data: [33.3, 33.3, 33.4],
       backgroundColor: [
-          '#E1EF39',
-        '#44FF8F',
-        '#278FFB'
-        
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)'
       ],
       borderColor: [
-        '#E1EF39',
-        '#44FF8F',
-        '#278FFB'
-        
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)'
       ],
       borderWidth: 1
     }]
@@ -852,15 +806,8 @@ var myChart3 = new Chart(ctx, {
     $('#example').DataTable( {
         dom: 'Bfrtip',
         buttons: [
-             'csv'
-        ],
-        scrollY: '200px',
-        scrollCollapse: true,
-       
-        responsive: true,
-        scrollX: true,
-        scroller: true,
-        
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
     } );
 } );
   </script>
@@ -869,15 +816,9 @@ var myChart3 = new Chart(ctx, {
   $(document).ready(function() {
   $('#example1').DataTable( {
       dom: 'Bfrtip',
-      buttons: [
-           'csv'
-      ],
-      scrollY: '200px',
-        scrollCollapse: true,
-        
-        responsive: true,
-        scrollX: true,
-        scroller: true,
+      // buttons: [
+      //     'copy', 'csv', 'excel', 'pdf', 'print'
+      // ]
   } );
 } );
 </script>
@@ -887,14 +828,8 @@ var myChart3 = new Chart(ctx, {
   $('#example4').DataTable( {
       dom: 'Bfrtip',
       buttons: [
-           'csv'
-      ],
-      scrollY: '200px',
-        scrollCollapse: true,
-       
-        responsive: true,
-        scrollX: true,
-        scroller: true,
+          'copy', 'csv', 'excel', 'pdf', 'print'
+      ]
   } );
 } );
 </script>
@@ -908,14 +843,14 @@ var myChart3 = new Chart(ctx, {
         label: '',
         data: [70,30],
         backgroundColor: [
-          '#44FF8F',
-          '#278FFB'
+          'rgba(255, 99, 132, 0.5)',
+          'rgba(54, 162, 235, 0.2)'
           
         ],
         borderColor: [
-        '#44FF8F',
+          'rgba(255,99,132,1)',
           
-        '#278FFB'
+          'rgba(75, 192, 192, 1)'
         ],
         borderWidth: 1
       }]

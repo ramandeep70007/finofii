@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    /* GENERAL FONT */
+    --font1: "Titillium Web", sans-serif;
+    --font2: 'Roboto', sans-serif;
+    /* GENERAL COLOR */
+    --bg-col-1: #0059b3;
+    --bg-col-2: #dc3545;
+    --bg-col-3: #fff;
+    --bg-col-4: #024c96;
+    --tx-color-1: #fff;
+    --tx-color-2: #000;
+    --tx-color-3: #0059b3;
+  /* INTEREST */
+    --bg-interest-section: rgb(255, 255, 255);
+    --tx-interest-section-title: #212529;
+    /* INTEREST CARD 1*/
+    --bg-interest-card1: #dc3545;
+    --tx-interest-card1-body: #fff;
+    --tx-interest-card1-link: #fff;
+    /* INTEREST CARD 2 */
+    --bg-interest-card2: #0059b3;
+    --tx-interest-card2-body: #fff;
+    --tx-interest-card2-link: #fff;
+   
+}
+.row {
+    display: block !important;
+    text-align: center !important;
+}
+.dark-mode {
+    /* GENERAL COLOR */
+    --bg-col-1: #121212;
+    --tx-color-1: #fff;
+    /* INTEREST*/
+    --bg-interest-section: #121212;
+    --tx-interest-section-title: #fff;
+    /* INTEREST CARD 1*/
+    --bg-interest-card1: #272727;
+    --tx-interest-card1-body: #fff;
+    --tx-interest-card1-link: #fff;
+    /* INTEREST CARD */
+    --bg-interest-card2: #272727;
+    --tx-interest-card2-body: #fff;
+    --tx-interest-card2-link: #fff;
+}
+section#topic {
+    height: max-content;
+    height: 100vh;
+}
+
+.interest-section {
+  background: var(--bg-interest-section);
+  font-family: var(--font1);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.interest-section .title-section {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tx-interest-section-title);
+}
+.interest-section .card.ins-1 {
+  background: var(--bg-interest-card1);
+}
+.interest-section .card.ins-1 .card-body {
+  color: var(--tx-interest-card1-body);
+  min-height: 78px;
+}
+.interest-section .card.ins-1 .card-body .title-box h3, .interest-section .card.ins-1 .card-body .title-box .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.interest-section .card.ins-1 .card-body .title-box h3 .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 .icon-left {
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+  margin: 0 10px 0 0;
+}
+@media (min-width: 768px) {
+  .interest-section .card.ins-1 .card-body .title-box h3 .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 .icon-left {
+    font-size: 2rem;
+  }
+}
+.interest-section .card.ins-1 .card-body .title-box h3 a, .interest-section .card.ins-1 .card-body .title-box .h3 a {
+  color: var(--tx-interest-card1-link);
+  text-decoration: none;
+}
+.interest-section .card.ins-1 .card-body .title-box h3 a:hover .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 a:hover .icon-left {
+  transform: translateY(-3px);
+}
+.interest-section .card.ins-2 {
+  background: var(--bg-interest-card2);
+}
+.interest-section .card.ins-2 .card-body {
+  color: var(--tx-interest-card2-body);
+  min-height: 78px;
+}
+.interest-section .card.ins-2 .card-body .title-box h3, .interest-section .card.ins-2 .card-body .title-box .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.interest-section .card.ins-2 .card-body .title-box h3 .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 .icon-left {
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+  margin: 0 10px 0 0;
+}
+@media (min-width: 768px) {
+  .interest-section .card.ins-2 .card-body .title-box h3 .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 .icon-left {
+    font-size: 2rem;
+  }
+}
+.interest-section .card.ins-2 .card-body .title-box h3 a, .interest-section .card.ins-2 .card-body .title-box .h3 a {
+  color: var(--tx-interest-card1-link);
+  text-decoration: none;
+}
+.interest-section .card.ins-2 .card-body .title-box h3 a:hover .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 a:hover .icon-left {
+  transform: translateY(-3px);
+}
+
+</style>
+<script>
+    function myFunction() {
+  var element = document.getElementById('topic');
+  element.classList.toggle("dark-mode");
+
+  var x = document.getElementById("btnValue");
+  if (x.innerHTML === "Dark mode") {
+    x.innerHTML = "Light mode";
+    x.classList.remove('btn-dark')
+    x.classList.toggle('btn-light')
+  } else {
+    x.innerHTML = "Dark mode";
+    x.classList.remove('btn-light')
+    x.classList.toggle('btn-dark')
+  }
+
+}
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <section class="button">
+            <div class="container-lg py-2">
+              <button class="btn btn-dark btn-sm text-uppercase" onclick="myFunction()" id="btnValue" type="button">Dark mode</button>
+            </div>
+          </section>     
+          <section id="topic" class="interest-section">
+                  <div class="container-lg py-5">
+                      <div class="container-lg px-0">
+                          <div class="row">
+                              <div class="col">
+                                  <h2 class="title-section">Awesome!</h2>
+                                  <h2 class="title-section">Connecting with Your Accounting Sowftware.</h2>
+                                   <p class="title-section">chose one of the options to get started</p>
+                              </div>
+                              <!-- <div class="col clearfix">
+                                  <span class="title-section d-flex justify-content-end">
+                                      out
+                                  </span>
+                              </div> -->
+                          </div>
+                      </div>
+              
+                      <div class="container px-0">
+                          <div class="row">
+                              <div class="col-md-12 my-2">
+                                  <div class="card shadow-sm ins-1">
+                                      <div class="card-body d-flex align-items-center">
+              
+              
+                                          <div class="title-box">
+                                              <h3 class="mb-0"><a class="d-flex align-items-center" href="#"><i
+                                                          class="icon-left fas fa-at up"></i>Connect With Telly Prime<i class="icon-right fas fa-arrow-right"></i></a></h3>
+                                          </div>
+              
+              
+              
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12 my-2">
+                                  <div class="card shadow-sm ins-2">
+                                      <div class="card-body d-flex align-items-center">
+              
+              
+                                          <div class="title-box">
+                                              <h3 class="mb-0"><a class="d-flex align-items-center" href="https://www.zoho.com/books/signup/"><i
+                                                          class="icon-left fas fas fa-bullhorn"></i>Connect With Zoho Books India Datacenter<i class="icon-right fas fa-arrow-right"></i></a></h3>
+                                          </div>
+              
+              
+              
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                             
+                           
+                          </div>
+                          
+              
+                      </div>
+                  </div>
+              
+              </section>
+    </body>
+</html>
